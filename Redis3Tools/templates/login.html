@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>钱包接口测试平台 - 登录</title>
+    <link href="/static/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=2.2.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <div>
+
+            <h1 class="logo-name">QB</h1>
+
+        </div>
+        <h3>欢迎使用 接口测试平台</h3>
+
+        <form action="/redistools/login/" method="post" class="m-t" role="form">
+            <!--{% csrf_token %}-->
+            <div class="form-group">
+                <input name="username" type="email" class="form-control" placeholder="用户名" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="密码" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+
+            <div class="text-info" style="margin-top:15px;"><i class="fa fa-question-sign"></i> 请使用AD账号和密码！<i
+                    style="color:red">{{loginmes}}</i></div>
+
+        </form>
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/static/js/jquery-2.1.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js?v=3.4.0"></script>
+
+
+</body>
+
+</html>

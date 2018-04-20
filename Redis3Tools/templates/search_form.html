@@ -1,0 +1,106 @@
+{% load staticfiles %}
+<html>
+<head>
+    <meta name="viewport" lang="zh_CN" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <link rel="stylesheet" href="{%  static  'css/bootstrap.min.css' %}">
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script href="{%  static  'css/bootstrap-theme.min.css' %}"></script>
+    <script src="{%  static  'js/jquery-3.3.1.min.js' %}"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="{%  static  'js/bootstrap.min.js' %}"></script>
+    <title> RedisTools</title>
+    <script type="text/javascript">
+        function Search() {
+            var namespace = $("input[name=namespace]:eq(0)").val();
+            var keys = $("input[name=keys]:eq(0)").val();
+            var redistype = $("input[type=radio]:checked").val()
+            var data = {"namespace": namespace, "keys": keys, "redistype": redistype};
+            if (namespace.length != 0 && keys.length != 0) {
+                $.ajax({
+                    method: "POST",
+                    url: "/redistools/search/",
+                    data: data,
+                    dataType: "html",
+                    success: function (result) {
+                        $("#result").html(result);
+                        $("input[name=namespace]:eq(0)").val("");
+                        $("input[name=keys]:eq(0)").val("");
+                    }
+                });
+            }
+            else {
+                alert("namespace或keys不能为空")
+            }
+        }
+        function Delete() {
+            var namespace = $("input[name=namespace]:eq(0)").val();
+            var keys = $("input[name=keys]:eq(0)").val();
+            var redistype = $("input[type=radio]:checked").val()
+            var data = {"namespace": namespace, "keys": keys, "redistype": redistype};
+            if (namespace.length != 0 && keys.length != 0) {
+                if (confirm("确定删除: " + JSON.stringify(data))) {
+                    $.ajax({
+                        method: "POST",
+                        url: "/redistools/delete/",
+                        data: data,
+                        dataType: "html",
+                        success: function (result) {
+                            $("#result").html(result);
+                            $("input[name=namespace]:eq(0)").val("");
+                            $("input[name=keys]:eq(0)").val("");
+                        }
+                    });
+                }
+            }
+            else {
+                alert("namespace或keys不能为空")
+            }
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default" id="login" action="#" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">RedisTools</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            {% if not username %}
+            <li><a href="/redistools/login"><i class="glyphicon glyphicon-log-in"></i><span>登录</span></a></a></li>
+            {% else %}
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i><span id="userid">{{username}}</span></a></li>
+            <li><a href="/redistools/logout"><i class="glyphicon glyphicon-log-out"></i><span>退出</span></a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+<!--<nav class="form-inline col-md-2 col-md-offset-10">-->
+<!--<br>-->
+<!--{% if not username %}-->
+<!--<a href="/redistools/login"><i class="glyphicon glyphicon-log-in"></i><span>登录</span></a>-->
+<!--{% else %}-->
+<!--<a href="#"><i class="glyphicon glyphicon-user"></i><span id="userid">{{username}}</span></a>-->
+<!--<a href="/redistools/logout"><i class="glyphicon glyphicon-log-out"></i><span>退出</span></a>-->
+<!--{% endif %}-->
+<!--</nav>-->
+<form class="form-inline col-md-8 col-md-offset-2" id="redis" action="#">
+    <div class="form-group">
+        <label for="namespace">namespace:</label>
+        <input type="text" class="form-control" id="namespace" name="namespace" placeholder="qbjrMain-3340">
+    </div>
+    <div class="form-group">
+        <label for="keys">keys:</label>
+        <input type="text" class="form-control" name="keys" id="keys" placeholder="appIndexNew">
+    </div>
+    <div class="form-group">
+        <input type="radio" name="redis" id="redis3" checked="checked" value="3">Redis3.0
+        <input type="radio" name="redis" id="redis2" value="2">Redis2.0
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-primary" id="Searchkeys" onclick="Search();">Search</button>
+        <button type="button" class="btn btn-danger " id="Deletekeys" onclick="Delete();">Delete</button>
+    </div>
+    <div class="col-md-4,table-responsive" id="result"></div>
+</form>
+</body>
+</html>
