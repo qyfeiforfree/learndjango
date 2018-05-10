@@ -64,7 +64,7 @@ def search(request):
                     try:
                         res = requests.post(url=configs.get("redis3").get("url") + uri_get, data=get_k,
                                             headers={'Content-Type': 'application/json;charset=utf-8'})
-                        result_list = json.JSONDecoder().decode(res.text)["result"]
+                        result_list = str(json.JSONDecoder().decode(res.text)["result"])
                         logger.info(
                             '查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"' % (
                                 username, redistype, namespace, keys) + "返回结果为：" + result_list)
@@ -78,7 +78,7 @@ def search(request):
                                                 port=configs.get("redis2").get("port"),
                                                 db=configs.get("redis2").get("db"))
                     rs = redis.StrictRedis(connection_pool=pool)
-                    redis2keys = str(namespace+keys)
+                    redis2keys = str(namespace + keys)
                     try:
                         result_list = str(rs.get(redis2keys))
                         logger.info(
@@ -98,8 +98,8 @@ def search(request):
             form = nameSpaceForm()
 
 
-@sso_check
 @csrf_exempt
+@sso_check
 def delete(request):
     request.encoding = 'utf-8'
     username = getuser(request)['username']
@@ -110,16 +110,16 @@ def delete(request):
             form = nameSpaceForm(request.POST)
             if form.is_valid():
                 redistype = form.cleaned_data['redistype']
-                namespace = form.cleaned_data['nameSpace']
+                namespace = form.cleaned_data['namespace']
                 keys = form.cleaned_data['keys']
                 logger.info(
                     '用户为:"%s",删除类型为:"%s","namespace":"%s", "key":"%s"}' % (username, redistype, namespace, keys))
                 if (int(redistype) == 3):
-                    uri_get = 'redis/v1/del'
+                    uri_del = 'redis/v1/del'
                     get_k = '{"namespace":"%s", "key":"%s"}' % (namespace, keys)
-                    res = requests.post(url=configs.get("redis3").get("url") + uri_get, data=get_k,
+                    res = requests.post(url=configs.get("redis3").get("url") + uri_del, data=get_k.encode('UTF-8'),
                                         headers={'Content-Type': 'application/json;charset=utf-8'})
-                    result_list = json.JSONDecoder().decode(res.text)["result"]
+                    result_list = str(json.JSONDecoder().decode(res.text)["result"])
                     logger.info(
                         '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
                             username, redistype, namespace, keys) + "返回结果为：" + result_list)
@@ -130,7 +130,7 @@ def delete(request):
                                                 port=configs.get("redis2").get("port"),
                                                 db=configs.get("redis2").get("db"))
                     rs = redis.StrictRedis(connection_pool=pool)
-                    redis2keys = namespace + keys
+                    redis2keys = str(namespace) + str(keys)
                     try:
                         result_list = str(rs.delete(redis2keys))
                         logger.info(
