@@ -598,3 +598,273 @@ Traceback (most recent call last):
   File "D:/learndjango/Redis3Tools\redistools\search.py", line 69, in search
     username, redistype, namespace, keys.result_list))
 AttributeError: 'unicode' object has no attribute 'result_list'
+2018-05-10 14:39:56,313 [Thread-6:8044] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/delete/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 125, in delete
+    username, redistype, namespace, keys) + "返回结果为：" + result_list)
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-05-10 14:42:56,720 [Thread-1:5672] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/delete/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 125, in delete
+    username, redistype, namespace, keys) + "返回结果为：" + result_list)
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-05-10 14:47:11,921 [Thread-7:6712] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/delete/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/learndjango/Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:/learndjango/Redis3Tools\redistools\search.py", line 125, in delete
+    username, redistype, namespace, keys) + "返回结果为：" + result_list)
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-05-10 14:48:28,884 [Thread-7:9876] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/delete/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:/learndjango/Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:/learndjango/Redis3Tools\redistools\search.py", line 125, in delete
+    username, redistype, namespace, keys) + "返回结果为：" + result_list)
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-06-11 18:54:52,207 [Thread-4:7240] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', {"result_list": aa.get('aa'), "keys": keys})
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)
+2018-06-11 18:54:53,232 [Thread-5:644] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', {"result_list": aa.get('aa'), "keys": keys})
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)
+2018-06-11 18:54:53,657 [Thread-6:12240] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', {"result_list": aa.get('aa'), "keys": keys})
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)
+2018-06-11 18:54:53,832 [Thread-7:9776] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', {"result_list": aa.get('aa'), "keys": keys})
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)
+2018-06-11 18:54:54,640 [Thread-8:13356] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', {"result_list": aa.get('aa'), "keys": keys})
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)
+2018-06-12 09:21:31,703 [Thread-4:14804] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /redistools/search/
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\sso_check.py", line 17, in _wrap
+    return func(request, *args, **kwargs)
+  File "D:\learndjango\Redis3Tools\redistools\search.py", line 92, in search
+    return render_to_response('result.html', aa)
+  File "D:\Python27\lib\site-packages\django\shortcuts.py", line 21, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "D:\Python27\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\Python27\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "D:\Python27\lib\site-packages\django\utils\encoding.py", line 88, in force_text
+    raise DjangoUnicodeDecodeError(s, *e.args)
+DjangoUnicodeDecodeError: 'utf8' codec can't decode byte 0xac in position 0: invalid start byte. You passed in "\xac\xed\x00\x05sr\x00\x18com.hdb.user.entity.Userb\x8c\xcaZ\xd8\xbf{%\x02\x00\x1eL\x00\x11EAccountStartDatet\x00\x10Ljava/util/Date;L\x00\x0cactivityFlagt\x00\x12Ljava/lang/String;L\x00\x06authIdt\x00\x10Ljava/lang/Long;L\x00\nauthStatust\x00\x13Ljava/lang/Integer;L\x00\x0cbeInviteCodeq\x00~\x00\x02L\x00\x04cityq\x00~\x00\x04L\x00\ncreateDateq\x00~\x00\x01L\x00\x0fdownLoadChannelq\x00~\x00\x02L\x00\x0ceAccountFlagq\x00~\x00\x02L\x00\x05emailq\x00~\x00\x02L\x00\x08errorCntq\x00~\x00\x04L\x00\x15forbidLoginExpireDateq\x00~\x00\x01L\x00\x11forbidLoginStatusq\x00~\x00\x04L\x00\ngesturePwdq\x00~\x00\x02L\x00\x02idq\x00~\x00\x03L\x00\x08identityq\x00~\x00\x04L\x00\x07isAgreeq\x00~\x00\x04L\x00\x08isLockedq\x00~\x00\x02L\x00\x0bmobilePhoneq\x00~\x00\x02L\x00\x08newphoneq\x00~\x00\x02L\x00\nnotifyFlagq\x00~\x00\x02L\x00\x05pointq\x00~\x00\x04L\x00\x08provinceq\x00~\x00\x04L\x00\x07purposeq\x00~\x00\x04L\x00\x03pwdq\x00~\x00\x02L\x00\x10registerPlatformq\x00~\x00\x02L\x00\x06sourceq\x00~\x00\x04L\x00\x08tradePwdq\x00~\x00\x02L\x00\x05unameq\x00~\x00\x02L\x00\x0bupdateTimesq\x00~\x00\x04xppt\x00\x010sr\x00\x0ejava.lang.Long;\x8b\xe4\x90\xcc\x8f#\xdf\x02\x00\x01J\x00\x05valuexr\x00\x10java.lang.Number\x86\xac\x95\x1d\x0b\x94\xe0\x8b\x02\x00\x00xp\x00\x00\x00\x00\x00\x00\x01'sr\x00\x11java.lang.Integer\x12\xe2\xa0\xa4\xf7\x81\x878\x02\x00\x01I\x00\x05valuexq\x00~\x00\x08\x00\x00\x00\x00pq\x00~\x00\x0bsr\x00\x12java.sql.Timestamp&\x18\xd5\xc8\x01S\xbfe\x02\x00\x01I\x00\x05nanosxr\x00\x0ejava.util.Datehj\x81\x01KYt\x19\x03\x00\x00xpw\x08\x00\x00\x01c\xeeC\xc5\xa8x\x00\x00\x00\x00pt\x00\x010t\x00\x00q\x00~\x00\x0bpq\x00~\x00\x0bpsq\x00~\x00\x07\x00\x00\x00\x00\x00\x00\x08Fq\x00~\x00\x0bsq\x00~\x00\n\x00\x00\x00\x01t\x00\x010t\x00\x0b13909818093pt\x00\x011q\x00~\x00\x0bq\x00~\x00\x0bq\x00~\x00\x0bpt\x00\x04qbgjq\x00~\x00\x12pt\x00\x0b13909818093q\x00~\x00\x0b" (<type 'str'>)

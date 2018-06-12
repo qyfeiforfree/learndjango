@@ -64,10 +64,11 @@ def search(request):
                     try:
                         res = requests.post(url=configs.get("redis3").get("url") + uri_get, data=get_k,
                                             headers={'Content-Type': 'application/json;charset=utf-8'})
-                        result_list = str(json.JSONDecoder().decode(res.text)["result"])
+                        # print res.text
+                        result_list = str(json.JSONDecoder().decode(res.text))
                         logger.info(
-                            '查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                                username, redistype, namespace, keys) + "返回结果为：" + result_list)
+                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"' % (
+                                username, redistype, namespace, keys) + u"返回结果为：" + result_list)
                         return render_to_response('result.html', {"result_list": result_list, "keys": keys})
                     except BaseException, e:
                         logger.error(e)
@@ -81,14 +82,15 @@ def search(request):
                     redis2keys = str(namespace + keys)
                     try:
                         result_list = str(rs.get(redis2keys))
+                        aa = {"result_list": result_list, "keys": redis2keys}
                         logger.info(
-                            '查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"}' % (
-                                username, redistype, namespace, keys) + "返回结果为：" + result_list)
+                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"}' % (
+                                username, redistype, namespace, keys) + u"返回结果为：" + aa)
 
                     except BaseException, e:
                         logger.error(e)
                         return render_to_response('error.html', {"error": e})
-                    return render_to_response('result.html', {"result_list": result_list, "keys": keys})
+                    return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})
             else:
                 error = form.errors
                 logger.error(error)
@@ -119,7 +121,7 @@ def delete(request):
                     get_k = '{"namespace":"%s", "key":"%s"}' % (namespace, keys)
                     res = requests.post(url=configs.get("redis3").get("url") + uri_del, data=get_k.encode('UTF-8'),
                                         headers={'Content-Type': 'application/json;charset=utf-8'})
-                    result_list = str(json.JSONDecoder().decode(res.text)["result"])
+                    result_list = str(json.JSONDecoder().decode(res.text))
                     logger.info(
                         '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
                             username, redistype, namespace, keys) + "返回结果为：" + result_list)
@@ -133,12 +135,13 @@ def delete(request):
                     redis2keys = str(namespace) + str(keys)
                     try:
                         result_list = str(rs.delete(redis2keys))
+                        aa = {"result_list": result_list, "keys": redis2keys}
                         logger.info(
                             '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                                username, redistype, namespace, keys) + "返回结果为：" + result_list)
+                                username, redistype, namespace, keys) + "返回结果为：" + aa.get('aa'))
                     except BaseException, e:
                         logger.error(e)
-                    return render_to_response('result.html', {"result_list": result_list, "keys": keys})
+                    return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})
             else:
                 error = form.errors
                 logger.error(error)

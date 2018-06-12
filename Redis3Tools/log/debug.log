@@ -969,3 +969,162 @@ VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None
 2018-04-19 18:45:10,493 [Thread-52:4240] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/logout HTTP/1.1" 302 0
 2018-04-19 18:45:13,369 [Thread-53:13432] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
 2018-04-19 18:45:13,532 [Thread-54:13436] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-05-10 14:39:38,681 [Thread-1:11472] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-05-10 14:39:38,756 [Thread-3:1124] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+2018-05-10 14:39:39,193 [Thread-4:16112] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-05-10 14:39:47,201 [Thread-5:8692] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328Old"}
+2018-05-10 14:39:47,214 [Thread-5:8692] [django:70] [search:search] [INFO]- 查询成功=====用户为:"qiyf",查询详细信息为:"3","namespace":"qbjrMain-3340", "key":"appIndex328Old"返回结果为：{"wholeFinance":{"subjectTitle":"全部理财","subjectDesc":"种类多样 总有一款适合你"},"recommendSubject":{"rxbPlan":{"amountMax":100000000000,"amountMin":100,"borrowType":"借款类型2","createBy":"1","createDate":1479441184000,"delFlag":"0","exitMode":"1","frozenAmount":1073500000,"frozenAmountLimit":5000022200000000,"id":56,"inTime":1479441184000,"interestRule":"1","periodLimit":"6","periodLimitUnit":"2","planName":"日息宝D计划11","planTypeId":22,"rateMax":12.70,"rateMaxStr":"12.70","rateMin":12.70,"rateMinStr":"12.70","refundWayStr":"一次性还本息","remark":"备注A11222","status":"1","stepAmount":"100","updateBy":"1","updateDate":1525593757000},"subjectTitle":"推荐项目","subjectDesc":"精挑细选 只为提供更优项目","yxbPlan":{"amountMax":60100,"amountMin":1000,"borrowType":"借款类型2","createBy":"1","createDate":1479441184000,"delFlag":"0","exitMode":"1","frozenAmount":3000000,"frozenAmountLimit":50000010000,"id":64,"inTime":1479441184000,"interestRule":"0","periodLimit":"18","periodLimitUnit":"2","planName":"月息宝G计划","planTypeId":21,"rateMax":13.50,"rateMaxStr":"13.50","rateMin":13.50,"rateMinStr":"13.50","refundWayStr":"按月等额本息","remark":"备注A11","status":"1","stepAmount":"1000","updateBy":"1","updateDate":1522233948000}},"otherSubject":{"rxbPlan":{"subjectTitle":"日息宝计划","rateMaxStr":"13.07","subjectDesc":"分散投标 提高效率","rateMax":13.07,"rateMin":9.10,"type":"rxbjh","rateMinStr":"9.10"},"sanBid":{"rateMinUnit":1,"rateMaxUnit":1,"subjectTitle":"散标","rateMaxStr":"1201.91","subjectDesc":"项目多样 期限灵活","rateMax":1201.91,"rateMin":0.00,"type":"sanBid","rateMinStr":"0.00"},"hqrxb":{"result":0,"releasetime":"9","remainnum":864255869000,"sevenDayRateStr":"6.57","subjectTitle":"活期日息宝","subjectDesc":"每日返息 随存随取","wanfensy":1.8100,"type":"hqrxb","sevenDayRate":6.57,"status":0,"refundWayStr":"1元起投,方便快捷"},"yxbPlan":{"subjectTitle":"月息宝计划","rateMaxStr":"13.50","subjectDesc":"精挑细选 随时加入","rateMax":13.50,"rateMin":10.90,"type":"yxbjh","rateMinStr":"10.90"}}}
+2018-05-10 14:39:47,220 [Thread-5:8692] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 4183
+2018-05-10 14:39:56,303 [Thread-6:8044] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:39:56,408 [Thread-6:8044] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/delete/ HTTP/1.1" 500 17169
+2018-05-10 14:42:56,707 [Thread-1:5672] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:42:56,844 [Thread-1:5672] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/delete/ HTTP/1.1" 500 17183
+2018-05-10 14:43:28,793 [Thread-7:6712] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:47:12,223 [Thread-7:6712] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/delete/ HTTP/1.1" 500 17667
+2018-05-10 14:47:32,461 [Thread-7:9876] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:48:29,036 [Thread-7:9876] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/delete/ HTTP/1.1" 500 17667
+2018-05-10 14:48:55,361 [Thread-9:11504] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:48:55,377 [Thread-9:11504] [django:73] [search:search] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-05-10 14:48:55,384 [Thread-9:11504] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-05-10 14:48:55,387 [Thread-9:11504] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-05-10 14:49:05,476 [Thread-10:16364] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:49:05,505 [Thread-10:16364] [django:73] [search:search] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-05-10 14:49:05,509 [Thread-10:16364] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-05-10 14:49:05,513 [Thread-10:16364] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-05-10 14:49:12,213 [Thread-11:5968] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:49:12,232 [Thread-11:5968] [django:73] [search:search] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-05-10 14:49:12,233 [Thread-11:5968] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-05-10 14:49:12,237 [Thread-11:5968] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-05-10 14:49:52,562 [Thread-7:15944] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:49:52,578 [Thread-7:15944] [django:73] [search:search] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-05-10 14:49:52,582 [Thread-7:15944] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-05-10 14:49:52,586 [Thread-7:15944] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-05-10 14:50:04,763 [Thread-8:14564] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:52:23,519 [Thread-7:5504] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:53:16,977 [Thread-7:1308] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"}
+2018-05-10 14:53:58,414 [Thread-7:1308] [django:125] [search:delete] [INFO]- 删除成功=====用户为:"qiyf",删除的详细信息为:"3","namespace":"qbjrMain-3340", "key":"appIndex328NewTime"返回结果为：0
+2018-05-10 14:54:03,671 [Thread-7:1308] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 500
+2018-05-10 14:54:40,269 [Thread-8:12844] [django:116] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"2","namespace":"qbjrMain-3340", "key":"appIndex328Old"}
+2018-05-10 14:54:40,276 [Thread-8:12844] [django:138] [search:delete] [INFO]- 删除成功=====用户为:"qiyf",删除的详细信息为:"2","namespace":"qbjrMain-3340", "key":"appIndex328Old"返回结果为：0
+2018-05-10 14:54:40,301 [Thread-8:12844] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 496
+2018-06-11 18:53:40,526 [Thread-1:6784] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-11 18:53:41,230 [Thread-3:10440] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-06-11 18:53:41,253 [Thread-5:10248] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-06-11 18:53:41,276 [Thread-4:12828] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-06-11 18:53:41,349 [Thread-6:2016] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-06-11 18:53:41,394 [Thread-7:5428] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-11 18:53:55,493 [Thread-8:13264] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:53:55,496 [Thread-8:13264] [django:90] [search:search] [ERROR]- 'utf8' codec can't decode byte 0xac in position 0: invalid start byte
+2018-06-11 18:53:55,500 [Thread-8:13264] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 218
+2018-06-11 18:54:41,940 [Thread-1:2064] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-11 18:54:42,206 [Thread-3:5284] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-11 18:54:52,198 [Thread-4:7240] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:54:53,229 [Thread-5:644] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:54:53,654 [Thread-6:12240] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:54:53,828 [Thread-7:9776] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:54:54,637 [Thread-8:13356] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:54:55,285 [Thread-6:12240] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23538
+2018-06-11 18:54:55,286 [Thread-4:7240] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23538
+2018-06-11 18:54:55,286 [Thread-7:9776] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23538
+2018-06-11 18:54:55,295 [Thread-8:13356] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23538
+2018-06-11 18:54:55,295 [Thread-5:644] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23538
+2018-06-11 18:55:30,515 [Thread-1:12240] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-11 18:55:30,704 [Thread-3:10608] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-11 18:55:43,766 [Thread-4:15328] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-11 18:55:43,770 [Thread-4:15328] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 2395
+2018-06-12 09:18:40,802 [Thread-1:14488] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-12 09:18:41,042 [Thread-3:1696] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-12 09:21:31,694 [Thread-4:14804] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:21:34,369 [Thread-4:14804] [django.server:124] [basehttp:log_message] [ERROR]- "POST /redistools/search/ HTTP/1.1" 500 23497
+2018-06-12 09:22:38,994 [Thread-1:3656] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:22:39,022 [Thread-1:3656] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 2437
+2018-06-12 09:23:25,878 [Thread-1:3432] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:23:25,885 [Thread-1:3432] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 2460
+2018-06-12 09:23:41,990 [Thread-3:11444] [django:117] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"2","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:23:41,993 [Thread-3:11444] [django:140] [search:delete] [INFO]- 删除成功=====用户为:"qiyf",删除的详细信息为:"2","namespace":"13909818093qb", "key":"gj"返回结果为：1
+2018-06-12 09:23:41,994 [Thread-3:11444] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 484
+2018-06-12 09:32:20,151 [Thread-4:6768] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-12 09:32:20,523 [Thread-5:13776] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-12 09:32:39,703 [Thread-6:14964] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:32:39,717 [Thread-6:14964] [django:70] [search:search] [INFO]- 查询成功=====用户为:"qiyf",查询详细信息为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"返回结果为：{"lastName":"推荐","bids":[{"process":"0","approvedPeriod":3.00,"maxValue":10000,"approvedPeriodUnit":2,"bidEnterAmount":0.00,"type":"rookieBid","refundWayStr":"每日返息，到期还本","globalStatus":16,"minValue":100,"refundWay":3,"borrowTitle":"新手专享-18051835069期","approvedAmount":10000.00,"webBidAmount":10000.00,"surplusAmount":10000.00,"bid":103206,"realFinanceRate":14.60,"base":"100"},{"result":0,"releasetime":"15","remainnum":999999990000,"borrowTitle":"活期日息宝","wanfensy":1.2300,"type":"hqrxb","sevenDayRate":6.57,"status":0,"refundWayStr":"1元起投,方便快捷"},{"process":"0","approvedPeriod":1.00,"approvedPeriodUnit":3,"bidEnterAmount":0.00,"type":"rxb","refundWayStr":"每日返息，到期还本","globalStatus":16,"min":"100","refundWay":3,"borrowTitle":"定期日息宝-18060805195期","approvedAmount":100.00,"webBidAmount":100.00,"surplusAmount":100.00,"bid":103373,"realFinanceRate":"10","base":"100"},{"process":"0","approvedPeriod":1.00,"approvedPeriodUnit":3,"bidEnterAmount":0.00,"type":"jxlc","refundWayStr":"按月等额本息","globalStatus":16,"min":"100","refundWay":0,"borrowTitle":"月息宝-18060808290期","approvedAmount":100.00,"webBidAmount":100.00,"surplusAmount":100.00,"bid":103374,"realFinanceRate":"11","base":"100"}],"midName":"计划推荐","topName":"优选"}
+2018-06-12 09:32:39,720 [Thread-6:14964] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 2706
+2018-06-12 09:32:57,049 [Thread-7:11340] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:32:57,075 [Thread-7:11340] [django:73] [search:search] [ERROR]- 'result'
+2018-06-12 09:32:57,082 [Thread-7:11340] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-06-12 09:32:57,084 [Thread-7:11340] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-06-12 09:33:40,440 [Thread-1:10496] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:33:40,456 [Thread-1:10496] [django:74] [search:search] [ERROR]- 'result'
+2018-06-12 09:33:40,464 [Thread-1:10496] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-06-12 09:33:40,469 [Thread-1:10496] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-06-12 09:34:15,362 [Thread-1:9276] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:34:15,384 [Thread-1:9276] [django:74] [search:search] [ERROR]- 'result'
+2018-06-12 09:34:15,388 [Thread-1:9276] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-06-12 09:34:15,391 [Thread-1:9276] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-06-12 09:35:23,220 [Thread-1:8304] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:35:23,240 [Thread-1:8304] [django:74] [search:search] [ERROR]- 'result'
+2018-06-12 09:35:23,243 [Thread-1:8304] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-06-12 09:35:23,246 [Thread-1:8304] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-06-12 09:36:03,176 [Thread-1:9984] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:36:03,197 [Thread-1:9984] [django:74] [search:search] [ERROR]- 'result'
+2018-06-12 09:36:03,200 [Thread-1:9984] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'error.html'.
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None': None, 'True': True}]"
+2018-06-12 09:36:03,203 [Thread-1:9984] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 137
+2018-06-12 09:36:39,582 [Thread-1:5492] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:36:39,601 [Thread-1:5492] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 506
+2018-06-12 09:36:46,125 [Thread-3:10920] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:36:46,147 [Thread-3:10920] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 492
+2018-06-12 09:38:01,094 [Thread-1:6256] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:38:01,115 [Thread-1:6256] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 3014
+2018-06-12 09:38:14,782 [Thread-3:3976] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093qb", "key":"gj"}
+2018-06-12 09:38:14,799 [Thread-3:3976] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 606
+2018-06-12 09:38:57,982 [Thread-4:8820] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:38:57,986 [Thread-4:8820] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 596
+2018-06-12 09:39:15,657 [Thread-5:7736] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:39:15,661 [Thread-5:7736] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 578
+2018-06-12 09:40:49,529 [Thread-1:7240] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:40:49,546 [Thread-1:7240] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 3014
+2018-06-12 09:40:56,674 [Thread-3:9236] [django:118] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 09:40:56,694 [Thread-3:9236] [django:127] [search:delete] [INFO]- 删除成功=====用户为:"qiyf",删除的详细信息为:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"返回结果为：{u'status': u'20000111', u'message': u'', u'result': 1, u'success': True}
+2018-06-12 09:40:56,694 [Thread-3:9236] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 613
+2018-06-12 09:41:09,602 [Thread-4:8932] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"3","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:41:09,627 [Thread-4:8932] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 607
+2018-06-12 09:41:21,328 [Thread-5:11388] [django:60] [search:search] [INFO]- 用户为:"qiyf",查询类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:41:21,332 [Thread-5:11388] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 578
+2018-06-12 09:41:36,150 [Thread-6:13416] [django:118] [search:delete] [INFO]- 用户为:"qiyf",删除类型为:"2","namespace":"13909818093q", "key":"bgj"}
+2018-06-12 09:41:36,151 [Thread-6:13416] [django:143] [search:delete] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-06-12 09:41:36,154 [Thread-6:13416] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 563
