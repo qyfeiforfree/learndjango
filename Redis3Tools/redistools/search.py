@@ -2,16 +2,16 @@
 from django.shortcuts import render_to_response
 import sys
 import logging.handlers
-from sso_check import *
+from .sso_check import *;
 import requests
-import json
+import json, redis
 from django.views.decorators.csrf import csrf_exempt
 from .forms import nameSpaceForm
-import config_default, redis
+from .config_default import *
+from imp import reload
 
 reload(sys)
-sys.setdefaultencoding("utf-8")
-configs = config_default.configs
+configs = configs
 logging.basicConfig()
 logger = logging.getLogger("django")
 
@@ -70,7 +70,7 @@ def search(request):
                             u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"' % (
                                 username, redistype, namespace, keys) + u"返回结果为：" + result_list)
                         return render_to_response('result.html', {"result_list": result_list, "keys": keys})
-                    except BaseException, e:
+                    except BaseException as e:
                         logger.error(e)
                         error = e
                     return render_to_response(('error.html', {"error": error}))
@@ -81,13 +81,14 @@ def search(request):
                     rs = redis.StrictRedis(connection_pool=pool)
                     redis2keys = str(namespace + keys)
                     try:
-                        result_list = str(rs.get(redis2keys))
+                        result_list = rs.get(redis2keys)
                         aa = {"result_list": result_list, "keys": redis2keys}
+                        logger.info(result_list)
                         logger.info(
                             u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"}' % (
                                 username, redistype, namespace, keys) + u"返回结果为：" + aa)
 
-                    except BaseException, e:
+                    except BaseException as e:
                         logger.error(e)
                         return render_to_response('error.html', {"error": e})
                     return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})
@@ -138,8 +139,8 @@ def delete(request):
                         aa = {"result_list": result_list, "keys": redis2keys}
                         logger.info(
                             '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                                username, redistype, namespace, keys) + "返回结果为：" + aa.get('aa'))
-                    except BaseException, e:
+                            username, redistype, namespace, keys) + u"返回结果为：" + aa)
+                    except BaseException as e:
                         logger.error(e)
                     return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})
             else:
