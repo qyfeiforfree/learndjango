@@ -9,11 +9,21 @@ from django.views.decorators.csrf import csrf_exempt
 from .forms import nameSpaceForm
 from .config_default import *
 from imp import reload
-
+from rediscluster import StrictRedisCluster
 reload(sys)
 configs = configs
 logging.basicConfig()
 logger = logging.getLogger("django")
+
+redis_nodes = [{'host': '172.28.38.28', 'port': 7000},
+               {'host': '172.28.38.29', 'port': 7000},
+               {'host': '1172.28.38.44', 'port': 7000}
+               ]
+try:
+    redisconn = StrictRedisCluster(startup_nodes=redis_nodes)
+except Exception as e:
+    print("Connect Error!" + e)
+
 
 
 def login(request):
@@ -57,7 +67,7 @@ def search(request):
                 namespace = form.cleaned_data['namespace']
                 keys = form.cleaned_data['keys']
                 logger.info(
-                    '用户为:"%s",查询类型为:"%s","namespace":"%s", "key":"%s"}' % (username, redistype, namespace, keys))
+                    '用户为:"%s",查询类型为:"%s","namespace":"%s"}' % (username, redistype, namespace))
                 if (int(redistype) == 3):
                     uri_get = 'redis/v1/get'
                     get_k = '{"namespace":"%s", "key":"%s"}' % (namespace, keys)
@@ -67,8 +77,8 @@ def search(request):
                         # print res.text
                         result_list = str(json.JSONDecoder().decode(res.text))
                         logger.info(
-                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                                username, redistype, namespace, keys) + u"返回结果为：" + result_list)
+                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s"' % (
+                                username, redistype, namespace) + u"返回结果为：" + result_list)
                         return render_to_response('result.html', {"result_list": result_list, "keys": keys})
                     except BaseException as e:
                         logger.error(e)
@@ -85,8 +95,8 @@ def search(request):
                         aa = {"result_list": result_list, "keys": redis2keys}
                         logger.info(result_list)
                         logger.info(
-                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s", "key":"%s"}' % (
-                                username, redistype, namespace, keys) + u"返回结果为：" + aa)
+                            u'查询成功=====用户为:"%s",查询详细信息为:"%s","namespace":"%s"}' % (
+                                username, redistype, namespace) + u"返回结果为：" + aa)
 
                     except BaseException as e:
                         logger.error(e)
@@ -114,32 +124,76 @@ def delete(request):
             if form.is_valid():
                 redistype = form.cleaned_data['redistype']
                 namespace = form.cleaned_data['namespace']
-                keys = form.cleaned_data['keys']
                 logger.info(
-                    '用户为:"%s",删除类型为:"%s","namespace":"%s", "key":"%s"}' % (username, redistype, namespace, keys))
+                    '用户为:"%s",删除类型为:"%s","namespace":"%s"}' % (username, redistype, namespace))
                 if (int(redistype) == 3):
                     uri_del = 'redis/v1/del'
-                    get_k = '{"namespace":"%s", "key":"%s"}' % (namespace, keys)
+                    get_k = '{"namespace":"%s"}' % (namespace)
                     res = requests.post(url=configs.get("redis3").get("url") + uri_del, data=get_k.encode('UTF-8'),
                                         headers={'Content-Type': 'application/json;charset=utf-8'})
                     result_list = str(json.JSONDecoder().decode(res.text))
                     logger.info(
                         '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                            username, redistype, namespace, keys) + "返回结果为：" + result_list)
+                            username, redistype, namespace) + "返回结果为：" + result_list)
 
-                    return render_to_response('result.html', {"result_list": result_list, "keys": keys})
+                    return render_to_response('result.html', {"result_list": result_list, "keys": namespace})
                 else:
                     pool = redis.ConnectionPool(host=configs.get("redis2").get("host"),
                                                 port=configs.get("redis2").get("port"),
                                                 db=configs.get("redis2").get("db"))
                     rs = redis.StrictRedis(connection_pool=pool)
-                    redis2keys = str(namespace) + str(keys)
+                    redis2keys = str(namespace)
                     try:
                         result_list = str(rs.delete(redis2keys))
                         aa = {"result_list": result_list, "keys": redis2keys}
                         logger.info(
-                            '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s", "key":"%s"' % (
-                            username, redistype, namespace, keys) + u"返回结果为：" + aa)
+                            '删除成功=====用户为:"%s",删除的详细信息为:"%s","namespace":"%s"' % (
+                            username, redistype, namespace) + u"返回结果为：" + aa)
+                    except BaseException as e:
+                        logger.error(e)
+                    return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})
+            else:
+                error = form.errors
+                logger.error(error)
+                return render_to_response('error.html', {"error": error})
+        else:
+            form = nameSpaceForm()
+@csrf_exempt
+@sso_check
+def searchKeys(request):
+    request.encoding = 'utf-8'
+    username = getuser(request)['username']
+    if not username:
+        return render_to_response('login.html')
+    else:
+        if request.method == "POST":
+            form = nameSpaceForm(request.POST)
+            if form.is_valid():
+                redistype = form.cleaned_data['redistype']
+                namespace = form.cleaned_data['namespace']
+                logger.info(
+                    '用户为:"%s",删除类型为:"%s","namespace":"%s"}' % (username, redistype, namespace))
+                if (int(redistype) == 3):
+                    result_list = redisconn.keys(pattern=namespace)
+                    print(result_list)
+                    logger.info(
+                        '查找成功=====用户为:"%s",查找的详细信息为:"%s","namespace":"%s"' % (
+                            username, redistype, namespace) + "返回结果为：" + result_list)
+
+                    return render_to_response('result.html', {"result_list": result_list, "keys": namespace})
+                else:
+                    pool = redis.ConnectionPool(host=configs.get("redis2").get("host"),
+                                                port=configs.get("redis2").get("port"),
+                                                db=configs.get("redis2").get("db"))
+                    rs = redis.StrictRedis(connection_pool=pool)
+                    redis2keys = str('*'+namespace+'*')
+                    try:
+                        result_list = str(rs.keys(pattern=redis2keys))
+
+                        aa = {"result_list": result_list, "keys": namespace}
+                        logger.info(
+                            '查找成功=====用户为:"%s",查找的详细信息为:"%s","namespace":"%s"' % (
+                                username, redistype, namespace) + u"返回结果为：" + aa)
                     except BaseException as e:
                         logger.error(e)
                     return render_to_response('result.html', {"result_list": aa, "keys": redis2keys})

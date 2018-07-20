@@ -1128,3 +1128,226 @@ VariableDoesNotExist: Failed lookup for key [error] in u"[{'False': False, 'None
 2018-06-12 09:41:36,150 [Thread-6:13416] [django:118] [search:delete] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Âà†Èô§Á±ªÂûã‰∏∫:"2","namespace":"13909818093q", "key":"bgj"}
 2018-06-12 09:41:36,151 [Thread-6:13416] [django:143] [search:delete] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
 2018-06-12 09:41:36,154 [Thread-6:13416] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 563
+2018-06-12 10:00:50,934 [Thread-1:11176] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-12 10:00:51,190 [Thread-3:2364] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-12 10:01:05,944 [Thread-4:10392] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:01:05,960 [Thread-4:10392] [django:71] [search:search] [INFO]- Êü•ËØ¢ÊàêÂäü=====Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢ËØ¶ÁªÜ‰ø°ÊÅØ‰∏∫:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"ËøîÂõûÁªìÊûú‰∏∫Ôºö{u'status': u'20000111', u'message': u'', u'result': None, u'success': True}
+2018-06-12 10:01:05,963 [Thread-4:10392] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 616
+2018-06-12 10:01:45,345 [Thread-5:11304] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:01:45,348 [Thread-5:11304] [django:91] [search:search] [ERROR]- coercing to Unicode: need string or buffer, dict found
+2018-06-12 10:01:45,349 [Thread-5:11304] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 191
+2018-06-12 10:01:53,963 [Thread-6:11684] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:01:53,966 [Thread-6:11684] [django:91] [search:search] [ERROR]- coercing to Unicode: need string or buffer, dict found
+2018-06-12 10:01:53,969 [Thread-6:11684] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 191
+2018-06-12 10:02:58,072 [Thread-1:8532] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:02:58,075 [Thread-1:8532] [django:91] [search:search] [ERROR]- coercing to Unicode: need string or buffer, dict found
+2018-06-12 10:02:58,082 [Thread-1:8532] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 191
+2018-06-12 10:05:59,398 [Thread-1:13508] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:05:59,414 [Thread-1:13508] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 586
+2018-06-12 10:06:14,930 [Thread-3:5412] [django:118] [search:delete] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Âà†Èô§Á±ªÂûã‰∏∫:"2","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-06-12 10:06:14,933 [Thread-3:5412] [django:143] [search:delete] [ERROR]- coercing to Unicode: need string or buffer, NoneType found
+2018-06-12 10:06:14,934 [Thread-3:5412] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 593
+2018-06-12 10:06:48,256 [Thread-4:2396] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"3","namespace":"13909818093", "key":"qbgj"}
+2018-06-12 10:06:48,269 [Thread-4:2396] [django:71] [search:search] [INFO]- Êü•ËØ¢ÊàêÂäü=====Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢ËØ¶ÁªÜ‰ø°ÊÅØ‰∏∫:"3","namespace":"13909818093", "key":"qbgj"ËøîÂõûÁªìÊûú‰∏∫Ôºö{u'status': u'40000111', u'message': u'namespace format error!', u'success': False}
+2018-06-12 10:06:48,270 [Thread-4:2396] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 608
+2018-06-12 10:06:55,446 [Thread-5:6596] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"qbgj", "key":"qbgj"}
+2018-06-12 10:06:55,450 [Thread-5:6596] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 554
+2018-06-12 10:07:09,437 [Thread-6:12380] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"13909818093", "key":"qbgj"}
+2018-06-12 10:07:09,441 [Thread-6:12380] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 568
+2018-06-13 15:25:10,755 [Thread-1:9472] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-06-13 15:25:11,213 [Thread-4:14392] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-06-13 15:25:11,479 [Thread-3:9236] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+2018-06-13 15:25:36,069 [Thread-5:15220] [django:118] [search:delete] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Âà†Èô§Á±ªÂûã‰∏∫:"2","namespace":"cron_Withhold", "key":"CronService"}
+2018-06-13 15:25:36,075 [Thread-5:15220] [django:143] [search:delete] [ERROR]- coercing to Unicode: need string or buffer, dict found
+2018-06-13 15:25:36,085 [Thread-5:15220] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 593
+2018-06-13 15:27:07,671 [Thread-1:13676] [django:60] [search:search] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Êü•ËØ¢Á±ªÂûã‰∏∫:"2","namespace":"cron_Withhold", "key":"CronService"}
+2018-06-13 15:27:07,681 [Thread-1:13676] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 586
+2018-06-13 15:27:21,111 [Thread-3:5448] [django:118] [search:delete] [INFO]- Áî®Êà∑‰∏∫:"qiyf",Âà†Èô§Á±ªÂûã‰∏∫:"2","namespace":"cron_Withhold", "key":"CronService"}
+2018-06-13 15:27:21,118 [Thread-3:5448] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/delete/ HTTP/1.1" 200 593
+2018-07-16 16:45:53,103 [Thread-1:15812] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 302 0
+2018-07-16 16:46:01,412 [Thread-3:15896] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-07-16 16:46:01,494 [Thread-4:15908] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-16 16:46:01,590 [Thread-6:15928] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-16 16:46:01,616 [Thread-5:15920] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-16 16:46:01,726 [Thread-7:15936] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-16 16:46:01,826 [Thread-8:15944] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 16:46:09,352 [Thread-9:15956] [django:60] [search:search] [INFO]- ”√ªßŒ™:"qiyf",≤È—Ø¿‡–ÕŒ™:"3","namespace":"aaa", "key":"ass"}
+2018-07-16 16:46:09,371 [Thread-9:15956] [django:71] [search:search] [INFO]- ≤È—Ø≥…π¶=====”√ªßŒ™:"qiyf",≤È—ØœÍœ∏–≈œ¢Œ™:"3","namespace":"aaa", "key":"ass"∑µªÿΩ·π˚Œ™£∫{'message': 'namespace format error!', 'status': '40000111', 'success': False}
+2018-07-16 16:46:09,381 [Thread-9:15956] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 602
+2018-07-16 16:46:30,677 [Thread-10:16108] [django:60] [search:search] [INFO]- ”√ªßŒ™:"qiyf",≤È—Ø¿‡–ÕŒ™:"3","namespace":"xd", "key":"Core"}
+2018-07-16 16:46:30,692 [Thread-10:16108] [django:71] [search:search] [INFO]- ≤È—Ø≥…π¶=====”√ªßŒ™:"qiyf",≤È—ØœÍœ∏–≈œ¢Œ™:"3","namespace":"xd", "key":"Core"∑µªÿΩ·π˚Œ™£∫{'message': 'namespace format error!', 'status': '40000111', 'success': False}
+2018-07-16 16:46:30,694 [Thread-10:16108] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 603
+2018-07-16 16:52:04,940 [Thread-1:16292] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-07-16 16:52:05,275 [Thread-3:7296] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 16:56:21,966 [Thread-4:15364] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4408
+2018-07-16 16:56:22,547 [Thread-5:10932] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 16:56:43,539 [Thread-6:16292] [django:60] [search:search] [INFO]- ”√ªßŒ™:"qiyf",≤È—Ø¿‡–ÕŒ™:"3","namespace":"qbjrJifen-39B0", "key":"account-id-new"}
+2018-07-16 16:56:43,552 [Thread-6:16292] [django:71] [search:search] [INFO]- ≤È—Ø≥…π¶=====”√ªßŒ™:"qiyf",≤È—ØœÍœ∏–≈œ¢Œ™:"3","namespace":"qbjrJifen-39B0", "key":"account-id-new"∑µªÿΩ·π˚Œ™£∫{'message': '', 'result': None, 'status': '20000111', 'success': True}
+2018-07-16 16:56:43,555 [Thread-6:16292] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 613
+2018-07-16 17:24:54,359 [Thread-1:11572] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+2018-07-16 17:25:54,165 [Thread-3:332] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4112
+2018-07-16 17:25:54,518 [Thread-4:14524] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 17:26:10,219 [Thread-5:11976] [django:60] [search:search] [INFO]- ”√ªßŒ™:"qiyf",≤È—Ø¿‡–ÕŒ™:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-07-16 17:26:10,230 [Thread-5:11976] [django:71] [search:search] [INFO]- ≤È—Ø≥…π¶=====”√ªßŒ™:"qiyf",≤È—ØœÍœ∏–≈œ¢Œ™:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"∑µªÿΩ·π˚Œ™£∫{'message': '', 'result': '{"lastName":"Õ∆ºˆ","top":[{"process":"100","approvedPeriod":3.00,"approvedPeriodUnit":2,"bidEnterAmount":1000000.00,"type":"rxbSubject","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"min":"100","refundWay":3,"borrowTitle":"∂´Ã√µ∂ª™-–¬ ÷","approvedAmount":1000000.00,"surplusAmount":0.00,"bid":101584,"realFinanceRate":"3.65","base":"100"}],"bids":[{"process":"0","approvedPeriod":1.00,"maxValue":10000,"approvedPeriodUnit":2,"bidEnterAmount":0.00,"type":"rookieBid","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"minValue":100,"refundWay":3,"borrowTitle":"–¬ ÷◊®œÌ-18062639968∆⁄","approvedAmount":10000.00,"webBidAmount":10000.00,"surplusAmount":10000.00,"bid":102199,"realFinanceRate":3.65,"base":"100"},{"result":0,"releasetime":"9","remainnum":864255835800,"borrowTitle":"ªÓ∆⁄»’œ¢±¶","wanfensy":1.8100,"type":"hqrxb","sevenDayRate":6.57,"status":0,"refundWayStr":"1‘™∆Õ∂,∑Ω±„øÏΩ›"},{"process":"80","approvedPeriod":1.00,"approvedPeriodUnit":2,"bidEnterAmount":8000.00,"type":"rxb","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"min":"100","refundWay":3,"borrowTitle":"∂®∆⁄»’œ¢±¶µ⁄101715∆⁄","approvedAmount":10000.00,"webBidAmount":10000.00,"surplusAmount":2000.00,"bid":101715,"realFinanceRate":"9.56","base":"100"},{"process":"39","approvedPeriod":3.00,"approvedPeriodUnit":2,"bidEnterAmount":394100.00,"type":"jxlc","refundWayStr":"∞¥‘¬µ»∂Ó±æœ¢","globalStatus":16,"min":"100","refundWay":0,"borrowTitle":"‘¬œ¢±¶-18052807265∆⁄","approvedAmount":1000000.00,"webBidAmount":1000000.00,"surplusAmount":605900.00,"bid":102182,"realFinanceRate":"12","base":"100"}],"midName":"º∆ªÆÕ∆ºˆ","topName":"”≈—°"}', 'status': '20000111', 'success': True}
+2018-07-16 17:26:10,233 [Thread-5:11976] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 3427
+2018-07-16 17:55:38,881 [Thread-6:7344] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4112
+2018-07-16 17:55:39,307 [Thread-7:8120] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 17:55:43,725 [Thread-8:14036] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:01:53,088 [Thread-9:15792] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4112
+2018-07-16 18:01:53,436 [Thread-10:16260] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:26:17,030 [Thread-11:16124] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4326
+2018-07-16 18:26:17,282 [Thread-12:16348] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:26:19,775 [Thread-13:10696] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4326
+2018-07-16 18:26:19,829 [Thread-16:13764] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-16 18:26:19,832 [Thread-15:15640] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-16 18:26:19,836 [Thread-14:9900] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-16 18:26:19,909 [Thread-17:9440] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-16 18:26:20,031 [Thread-18:13492] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:26:41,635 [Thread-19:15364] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+2018-07-16 18:29:37,053 [Thread-20:10176] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4400
+2018-07-16 18:29:37,556 [Thread-21:14964] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:35:04,339 [Thread-22:252] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4402
+2018-07-16 18:35:04,935 [Thread-23:16380] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-16 18:35:06,675 [Thread-24:11500] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4402
+2018-07-16 18:35:07,219 [Thread-25:3464] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:24:11,591 [Thread-26:7024] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4400
+2018-07-17 10:24:12,092 [Thread-27:12380] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:24:13,605 [Thread-28:10776] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4400
+2018-07-17 10:24:13,697 [Thread-29:13872] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-17 10:24:13,728 [Thread-30:14580] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-17 10:24:13,760 [Thread-31:16012] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-17 10:24:14,088 [Thread-32:10288] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-17 10:24:14,343 [Thread-33:4124] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:24:14,729 [Thread-34:15164] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4400
+2018-07-17 10:24:14,821 [Thread-35:12904] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-17 10:24:14,831 [Thread-36:440] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-17 10:24:14,844 [Thread-37:8036] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-17 10:24:15,125 [Thread-38:15016] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-17 10:24:15,452 [Thread-39:6068] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:24:29,507 [Thread-40:11672] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4400
+2018-07-17 10:24:30,225 [Thread-41:6092] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:30:34,232 [Thread-42:12420] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4596
+2018-07-17 10:30:34,882 [Thread-43:16004] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:30:38,024 [Thread-44:10176] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4596
+2018-07-17 10:30:38,771 [Thread-45:9684] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:30:41,569 [Thread-46:14776] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4596
+2018-07-17 10:30:42,161 [Thread-47:9248] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:31:53,032 [Thread-48:12528] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4651
+2018-07-17 10:31:53,683 [Thread-49:14672] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:35:04,003 [Thread-50:6612] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4620
+2018-07-17 10:35:04,466 [Thread-51:4392] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:35:07,064 [Thread-52:11504] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4620
+2018-07-17 10:35:07,758 [Thread-53:8224] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:35:35,824 [Thread-54:1452] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4626
+2018-07-17 10:35:36,273 [Thread-55:13084] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:52:05,972 [Thread-56:732] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4626
+2018-07-17 10:52:06,720 [Thread-57:11552] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:52:08,430 [Thread-58:7020] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4626
+2018-07-17 10:52:08,504 [Thread-59:10508] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-17 10:52:08,521 [Thread-60:14856] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-17 10:52:08,562 [Thread-61:12252] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-17 10:52:08,832 [Thread-62:14132] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-17 10:52:09,121 [Thread-63:7024] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:52:09,883 [Thread-64:8584] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4626
+2018-07-17 10:52:09,965 [Thread-65:5944] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-17 10:52:09,989 [Thread-67:6888] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-17 10:52:09,998 [Thread-66:15136] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-17 10:52:10,344 [Thread-68:7640] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-17 10:52:10,569 [Thread-69:14368] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:52:25,998 [Thread-70:11408] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4626
+2018-07-17 10:52:26,729 [Thread-71:4520] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:55:50,772 [Thread-72:7188] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4668
+2018-07-17 10:55:51,402 [Thread-73:12500] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 10:59:18,374 [Thread-74:15416] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4872
+2018-07-17 10:59:18,839 [Thread-75:8052] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 11:00:16,679 [Thread-76:7036] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4855
+2018-07-17 11:00:17,410 [Thread-77:5300] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 11:00:22,381 [Thread-78:13360] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4855
+2018-07-17 11:00:22,889 [Thread-79:2324] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 11:00:46,169 [Thread-80:3480] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4855
+2018-07-17 11:00:46,777 [Thread-81:16152] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 11:02:21,155 [Thread-82:15420] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4855
+2018-07-17 11:02:21,717 [Thread-83:14036] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 11:22:23,395 [Thread-84:8748] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4855
+2018-07-17 11:22:23,982 [Thread-85:11672] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 13:42:45,739 [Thread-86:8568] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4859
+2018-07-17 13:42:46,448 [Thread-87:10760] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 13:42:49,210 [Thread-88:4832] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4859
+2018-07-17 13:42:49,813 [Thread-89:2724] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:01:29,588 [Thread-90:5952] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4856
+2018-07-17 14:01:29,986 [Thread-91:14640] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:02:16,776 [Thread-92:6672] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4856
+2018-07-17 14:02:17,413 [Thread-93:2828] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:02:23,084 [Thread-94:8368] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4856
+2018-07-17 14:02:23,791 [Thread-95:15424] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:10:03,629 [Thread-96:14288] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4554
+2018-07-17 14:10:04,173 [Thread-97:1000] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:15:29,307 [Thread-98:9188] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4554
+2018-07-17 14:15:29,965 [Thread-99:1532] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:52:31,795 [Thread-100:14540] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4572
+2018-07-17 14:52:32,486 [Thread-101:8568] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:53:03,171 [Thread-102:10584] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4576
+2018-07-17 14:53:03,551 [Thread-103:15628] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:53:08,393 [Thread-104:16228] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4576
+2018-07-17 14:53:08,780 [Thread-105:14192] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-17 14:54:35,379 [Thread-106:7184] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4555
+2018-07-17 14:54:35,909 [Thread-107:15136] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 11:27:25,694 [Thread-1:14848] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 302 0
+2018-07-19 11:27:27,895 [Thread-3:15348] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 4556
+2018-07-19 11:27:28,156 [Thread-4:5208] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 17:05:02,190 [Thread-5:14136] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2135
+2018-07-19 17:05:02,301 [Thread-6:22660] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-19 17:05:02,314 [Thread-9:16640] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 1874
+2018-07-19 17:05:02,376 [Thread-8:16764] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-19 17:05:02,393 [Thread-7:18596] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-19 17:05:02,562 [Thread-10:9936] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-19 17:05:02,714 [Thread-11:6084] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 17:05:18,049 [Thread-12:13828] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2135
+2018-07-19 17:05:18,121 [Thread-13:11508] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 304 0
+2018-07-19 17:05:18,693 [Thread-14:21684] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 17:05:49,854 [Thread-15:20960] [django:60] [search:search] [INFO]- ”√ªßŒ™:"qiyf",≤È—Ø¿‡–ÕŒ™:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"}
+2018-07-19 17:05:49,872 [Thread-15:20960] [django:71] [search:search] [INFO]- ≤È—Ø≥…π¶=====”√ªßŒ™:"qiyf",≤È—ØœÍœ∏–≈œ¢Œ™:"3","namespace":"qbjrMain-3340", "key":"appIndexNew"∑µªÿΩ·π˚Œ™£∫{'message': '', 'result': '{"lastName":"Õ∆ºˆ","top":[{"process":"100","approvedPeriod":3.00,"approvedPeriodUnit":2,"bidEnterAmount":1000000.00,"type":"rxbSubject","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"min":"100","refundWay":3,"borrowTitle":"∂´Ã√µ∂ª™-–¬ ÷","approvedAmount":1000000.00,"surplusAmount":0.00,"bid":101584,"realFinanceRate":"3.65","base":"100"}],"bids":[{"process":"0","approvedPeriod":1.00,"maxValue":10000,"approvedPeriodUnit":2,"bidEnterAmount":0.00,"type":"rookieBid","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"minValue":100,"refundWay":3,"borrowTitle":"–¬ ÷◊®œÌ-18062639968∆⁄","approvedAmount":10000.00,"webBidAmount":10000.00,"surplusAmount":10000.00,"bid":102199,"realFinanceRate":3.65,"base":"100"},{"result":0,"releasetime":"9","remainnum":864255835800,"borrowTitle":"ªÓ∆⁄»’œ¢±¶","wanfensy":1.8100,"type":"hqrxb","sevenDayRate":6.57,"status":0,"refundWayStr":"1‘™∆Õ∂,∑Ω±„øÏΩ›"},{"process":"80","approvedPeriod":1.00,"approvedPeriodUnit":2,"bidEnterAmount":8000.00,"type":"rxb","refundWayStr":"√ø»’∑µœ¢£¨µΩ∆⁄ªπ±æ","globalStatus":16,"min":"100","refundWay":3,"borrowTitle":"∂®∆⁄»’œ¢±¶µ⁄101715∆⁄","approvedAmount":10000.00,"webBidAmount":10000.00,"surplusAmount":2000.00,"bid":101715,"realFinanceRate":"9.56","base":"100"},{"process":"39","approvedPeriod":3.00,"approvedPeriodUnit":2,"bidEnterAmount":394100.00,"type":"jxlc","refundWayStr":"∞¥‘¬µ»∂Ó±æœ¢","globalStatus":16,"min":"100","refundWay":0,"borrowTitle":"‘¬œ¢±¶-18052807265∆⁄","approvedAmount":1000000.00,"webBidAmount":1000000.00,"surplusAmount":605900.00,"bid":102182,"realFinanceRate":"12","base":"100"}],"midName":"º∆ªÆÕ∆ºˆ","topName":"”≈—°"}', 'status': '20000111', 'success': True}
+2018-07-19 17:05:49,881 [Thread-15:20960] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/search/ HTTP/1.1" 200 3427
+2018-07-19 17:06:27,814 [Thread-16:8812] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2135
+2018-07-19 17:06:27,854 [Thread-17:20696] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 304 0
+2018-07-19 17:06:28,179 [Thread-18:23240] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 17:12:29,293 [Thread-19:21716] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 17:14:35,987 [Thread-20:18284] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2135
+2018-07-19 17:14:36,057 [Thread-21:5280] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+2018-07-19 17:14:36,071 [Thread-23:13828] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+2018-07-19 17:14:36,073 [Thread-22:16004] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2018-07-19 17:14:36,086 [Thread-24:11508] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 1874
+2018-07-19 17:14:36,206 [Thread-25:7308] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-07-19 17:14:36,341 [Thread-26:12256] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 18:24:52,076 [Thread-27:16768] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2066
+2018-07-19 18:24:52,190 [Thread-28:14048] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 2222
+2018-07-19 18:24:52,503 [Thread-29:21596] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 18:26:32,268 [Thread-30:23660] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2080
+2018-07-19 18:26:32,312 [Thread-31:16984] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 2227
+2018-07-19 18:26:32,509 [Thread-32:18928] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 18:28:41,328 [Thread-33:20932] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2080
+2018-07-19 18:28:41,409 [Thread-34:10940] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 2191
+2018-07-19 18:28:41,712 [Thread-35:24208] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 18:31:45,774 [Thread-36:22364] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2080
+2018-07-19 18:31:45,820 [Thread-37:21564] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 2184
+2018-07-19 18:31:46,017 [Thread-38:17320] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-19 18:34:15,020 [Thread-39:16436] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-19 18:34:15,059 [Thread-40:1764] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 200 2186
+2018-07-19 18:34:15,236 [Thread-41:20500] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:11:44,200 [Thread-1:3404] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:11:44,318 [Thread-3:22112] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/redistools.js HTTP/1.1" 304 0
+2018-07-20 10:11:44,525 [Thread-4:20148] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:11:59,747 [Thread-5:11368] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/searchKeys/ HTTP/1.1" 302 0
+2018-07-20 10:12:29,030 [Thread-6:24360] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:12:29,458 [Thread-7:14868] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:12:35,506 [Thread-8:8580] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:12:36,002 [Thread-9:7920] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:12:53,520 [Thread-1:20800] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:12:53,860 [Thread-3:10848] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:12:58,528 [Thread-4:17160] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:12:58,997 [Thread-5:18920] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:13:09,354 [Thread-6:20340] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/searchKeys/ HTTP/1.1" 302 0
+2018-07-20 10:13:25,154 [Thread-7:14700] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/logout HTTP/1.1" 302 0
+2018-07-20 10:13:33,348 [Thread-8:5216] [django.server:124] [basehttp:log_message] [INFO]- "GET /redistools/search-form/ HTTP/1.1" 200 2084
+2018-07-20 10:13:33,575 [Thread-9:23316] [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-07-20 10:13:49,234 [Thread-10:23044] [django.server:124] [basehttp:log_message] [INFO]- "POST /redistools/searchKeys/ HTTP/1.1" 302 0

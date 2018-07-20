@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- 可选的Bootstrap主题文件（一般不使用） -->
     <script href="{% static 'css/bootstrap-theme.min.css' %}"></script>
-      <title> RedisTools</title>
+    <title> RedisTools</title>
 </head>
 <body>
 <nav class="navbar navbar-default" id="login" action="#" role="navigation">
@@ -27,25 +27,22 @@
 <form class="form-inline col-md-8 col-md-offset-2" id="redis" action="#">
     <div class="form-group">
         <label for="namespace">namespace:</label>
-        <input type="text" class="form-control" id="namespace" name="namespace" placeholder="qbjrMain-3340">
-    </div>
-    <div class="form-group">
-        <label for="keys">keys:</label>
-        <input type="text" class="form-control" name="keys" id="keys" placeholder="appIndexNew">
+        <input type="text" class="form-control" id="namespace" name="namespace" placeholder="qbjrMain-3340appIndexNew">
     </div>
     <div class="form-group">
         <input type="radio" name="redis" id="redis3" checked="checked" value="3">Redis3.0
         <input type="radio" name="redis" id="redis2" value="2">Redis2.0
     </div>
     <div class="form-group">
-        <button type="button" class="btn btn-primary" name="Searchkeys" onclick="Search()">Search</button>
-        <button type="button" class="btn btn-danger " name="Deletekeys" onclick="Delete()">Delete</button>
+        <button type="button" class="btn btn-primary" name="Getkeys" onclick="GetKeys()">GetValues</button>
+        <button type="button" class="btn btn-primary " name="Searchkeys" onclick="SearchKeys()">SearchKeys</button>
+        <button type="button" class="btn btn-danger " name="Deletekeys" onclick="DeleteKeys()">DeleteValues</button>
     </div>
     <div class="col-md-4,table-responsive" id="result"></div>
 </form>
-  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/redistools.js' %}"></script>
 </body>
 </html>
