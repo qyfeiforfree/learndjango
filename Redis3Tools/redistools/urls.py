@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^search-form/$', search.search_form),
     url(r'^search/$', search.search),
     url(r'^delete/$', search.delete),
+    url(r'^searchKeys/$', search.searchKeys),
     url(r'^login/$', search.login),
     url(r'^logout/$', search.logout),
     url(r'^', search.login),
