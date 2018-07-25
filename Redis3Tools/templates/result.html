@@ -1,17 +1,22 @@
-    <table id="result" class="table table-bordered " style="table-layout:fixed;word-wrap:break-word;">
-        <caption class="text-center">查询结果</caption>
-        <thead>
-        <tr>
-            <th width=20% class="text-center">Keys</th>
-            <th class="text-center">Value</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td class="text-left">{{keys}}</td>
-            <td class="text-left">{{result_list}}</td>
-        </tr>
-        </tbody>
-    </table>
+<table id="result" class="table table-bordered " style="table-layout:fixed;word-wrap:break-word;">
+    <caption class="text-center">查询结果</caption>
+    <thead>
+    <tr>
+        <th width=20% class="text-center">Keys</th>
+        <th class="text-center">Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <h4>删除时0代表成功，1代表失败或者不存在该key</h4>
+    <tr>
+        <td class="text-left">{{ keys }}</td>
+        <td class="text-left">
+            <ul type="circle">{% for res in result_list %}
+                <li>{{ res }}</li>
+            {% endfor %}</ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 
