@@ -2,7 +2,7 @@
 import requests
 from django.shortcuts import HttpResponseRedirect
 
-SSO_URL = "http://sso.qm.qianbao-inc.com/sso"
+SSO_URL = "http://sso.XXX.com/sso"
 
 
 def sso_check(func):
